@@ -71,7 +71,7 @@ body {
   width: 100%;
   text-align: center;
   color: white;
-  background-image: url(/images/white-tiger-l-min.png);
+  background-image: url(/docs/assets/img/white-tiger-l-min.png);
   background-size: cover;
   height: 100em;
   background-position: center;
@@ -96,19 +96,24 @@ p.section-title {
 
 /* ----------- JavascriptPage --------------- */
 
+.grid{
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
 .box {
-  transform: translate(-50%, -50%);
-  display: flex;
-  position: absolute;
-  height: 20em;
-  width: 80%;
-  top: 50%;
+  /* top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%); */
+  /* display: flex; */
+  /* position: absolute; */
+  height: 50vh;
+  width: 50vw;
   background-color: white;
   border-radius: 25px;
   /* margin-left:-250px;
   margin-top:-250px; */
-  flex-direction: column;
+  /* flex-direction: column; */
 }
 
 .box-title{
