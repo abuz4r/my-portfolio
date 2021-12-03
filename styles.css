@@ -89,7 +89,7 @@ body::-webkit-scrollbar {
   text-align: center;
   color: white;
   background-size: cover;
-  background-image: url(/docs/assets/img/white-tiger.png);
+  background-image: url(./docs/assets/img/white-tiger.png);
   height: 100vh;
   background-position: center;
 }
