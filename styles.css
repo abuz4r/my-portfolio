@@ -5,12 +5,13 @@
 body {
   margin: 0;
   background-color: rgb(0, 0, 0);
- }
-
- body {
   -ms-overflow-style: none; /* for Internet Explorer, Edge */
   scrollbar-width: none; /* for Firefox */
-  overflow-y: scroll; 
+  overflow-y: scroll;
+}
+
+a {
+  text-decoration: none;
 }
 
 body::-webkit-scrollbar {
@@ -22,18 +23,6 @@ body::-webkit-scrollbar {
   position: fixed;
   width: 100vw;
 }
-
-#projects{
-  height: 100vh;
-  display: grid;
-  place-items: center;
-}
-#skills{
-  height: 100vh;
-  display: grid;
-  place-items: center;
-}
-
 .topnav a {
   float: left;
   display: block;
@@ -80,23 +69,26 @@ body::-webkit-scrollbar {
     text-align: center;
     color: white;
     margin: 2em;
-    transform: translate(0,500%);
+    transform: translate(0, 500%);
   }
 }
 
 .bg-container {
-  width: 100%;
   text-align: center;
-  color: white;
   background-size: cover;
   background-image: url(docs/assets/img/white-tiger.png);
-  height: 100vh;
   background-position: center;
+  height: 100vh;
 }
+
 .bg-text-l {
-  padding-top: 3em;
+  padding-top: 200px;
   font-size: 5em;
   font-weight: bold;
+}
+
+.bg-text-sm {
+  margin-top: 5px;
 }
 
 p.section-title {
@@ -104,36 +96,66 @@ p.section-title {
   text-align: center;
 }
 
-.skills-container i {
-  font-size: 5em;
+#projects {
+  display: grid;
+  place-items: center;
 }
 
-#contact{
-  /* display: flex; */
-  height: 50vh;display: grid;
+.pro-box {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  background-color: white;
+  height: 200px;
+  width: 90vw;
+  border-radius: 2em;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 3px 3px 0px 3px rgba(84, 84, 84, 1);
+  -moz-box-shadow: 3px 3px 0px 3px rgba(84, 84, 84, 1);
+  box-shadow: 3px 3px 0px 3px rgba(84, 84, 84, 1);
+}
+
+.pro-box:hover {
+  background-color: gray;
+}
+
+#skills {
+  height: 50vh;
+  display: grid;
+  place-items: center;
+}
+
+.skills-container i {
+  font-size: 2em;
+}
+
+/* ----------- Contact --------------- */
+
+#contact {
+  height: 50vh;
+  display: grid;
   place-items: center;
 }
 .contact-container {
   text-align: center;
   flex-direction: column;
-  
 }
 
-#contact .logos{
+#contact .logos {
   font-size: 2em;
   margin: 2em;
-  
 }
-#contact .fab{
+#contact .fab {
   margin: 0.2em;
   font-size: 1.5em;
 }
-#contact .fab:hover{
+#contact .fab:hover {
   opacity: 0.5;
 }
 
-
-/* ----------- JavascriptPage --------------- */
+/* ----------- Javascript --------------- */
 
 .grid {
   display: grid;
@@ -156,7 +178,7 @@ p.section-title {
 }
 
 .random-movie-quotes-btn {
-  transform: translate(100%,10%);
+  transform: translate(100%, 10%);
   color: rgb(255, 255, 255);
   background-color: black;
   font-weight: bold;
