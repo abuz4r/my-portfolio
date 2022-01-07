@@ -27,7 +27,6 @@ a {
   overflow: hidden;
   position: fixed;
   width: 100vw;
-  backdrop-filter: blur(6px);
 }
 .topnav a {
   float: left;
